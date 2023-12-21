@@ -1,0 +1,150 @@
+
+
+@media only screen and (max-width: 600px) {
+    header{
+        background-color: #fff;
+        height: 2.4rem;
+    }
+    
+    .mainNav{
+        height: 100%;
+        width: 80%;
+        margin: auto;
+        
+        font-size: 0.4rem;
+    
+        display: flex;
+        direction: rtl;
+        justify-content: space-between;
+        
+    }
+    
+    .Logo{
+        display: flex;
+        justify-content: right;
+    
+    }
+    .Name_img{
+        align-self: flex-end;
+        width: auto;
+        height: 0.95rem;
+        padding-bottom: .5%;
+    }
+    .Logo_img{
+        align-self: center;
+        height: 2.0875rem;
+        width: auto;
+    }
+    
+    .navLinks {
+        display: flex;
+        font-size: 0.5 rem;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    header{
+        background-color: #fff;
+        height: 3rem;
+    }
+    
+    .mainNav{
+        height: 100%;
+        width: 80%;
+        margin: auto;
+        
+        font-size: 1rem;
+    
+        display: flex;
+        direction: rtl;
+        justify-content: space-between;
+        
+    }
+    
+    .Logo{
+        display: flex;
+        justify-content: right;
+    
+    }
+    .Name_img{
+        align-self: flex-end;
+        width: auto;
+        height: 1.55rem;
+        padding-bottom: .5%;
+    }
+    .Logo_img{
+        align-self: center;
+        height: 2.6875rem;
+        width: auto;
+    }
+    
+    .navLinks {
+        display: flex;
+        gap: 0.475rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    header{
+        background-color: #fff;
+        height: 3.125rem;
+    }
+    
+    .mainNav{
+        height: 100%;
+        width: 80%;
+        margin: auto;
+        
+        font-size: 1rem;
+    
+        display: flex;
+        direction: rtl;
+        justify-content: space-between;
+        
+    }
+    
+    .Logo{
+        display: flex;
+        justify-content: right;
+    
+    }
+    .Name_img{
+        align-self: flex-end;
+        width: auto;
+        height: 1.5625rem;
+        padding-bottom: .5%;
+    }
+    .Logo_img{
+        align-self: center;
+        height: 2.8125rem;
+        width: auto;
+    }
+    
+    .navLinks {
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {}
+
+Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {} */
+
+.symptomPage , .about{
+    display: block;
+    padding: 2% 0.5rem 0 0.5rem;
+    text-decoration: none;
+}
+
+.about:hover, .symptomPage:hover {
+    color: var(--linkHoverColour);
+}
+
+
+.mainNav > .navLinks > .active {
+    background-color: #dbdbca;
+}
