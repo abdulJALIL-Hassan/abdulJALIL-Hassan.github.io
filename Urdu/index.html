@@ -158,33 +158,62 @@
                 
                 <div>
                 <h2>Popup Form</h2>
-                    <input class="fromType" type="radio" id="html" name="fav_language" value="HTML">
-                    <label for="html">HTML</label><br>
-                    <input class="fromType" type="radio" id="css" name="fav_language" value="CSS">
-                    <label for="css">CSS</label><br>
-                    <form id="patientInfoForm" onsubmit="return submitForm()">
-                        <label for="name">نام</label>
-                        <input type="text" id="name" required>
+                    <div class="personInContact">
+                        <div class = "Logo" style="display: inline-block; width: fit-content;"> 
+                            <img class = "Logo_img" src="../Resources/logo.png" alt="Logo">  
+                            <img class = "Name_img" src="../Resources/name.png" alt="Name">
+                        </div>
+                        <span style="position: relative; bottom: 4px;">سے رابطے میں رہنے والا</span>
+                        <br>
+                        <input type="radio" id="patientSelf" name="personInContact" value="patientSelf" checked>
+                        <label for="patientSelf">مریض خود</label>
+                        <input type="radio" id="attendant" name="personInContact" value="attendant">
+                        <label for="attendant">سرپرست/اٹینڈنٹ</label>
+                    </div>
+
+                    
+                    <form id="InfoForm" onsubmit="return submitForm()">
+                        <div id="patientInfo">
+                            <label for="name">نام</label>
+                            <input type="text" id="name" required>
+                            
+                            <label for="age">عمر</label>
+                            <input type="number" id="age" required>
+                            
+                            <label for="sex">جنس</label>
+                            <select id="sex" required>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                            
+                            <label for="education">تعلیم</label>
+                            <input type="text" id="education" required>
                         
-                        <label for="age">عمر</label>
-                        <input type="number" id="age" required>
-                        
-                        <label for="sex">جنس</label>
-                        <select id="sex" required>
-                            <option value="Male">Male</option>
-                            <option value="Female">Female</option>
-                        </select>
-                        
-                        <label for="education">تعلیم</label>
-                        <input type="text" id="education" required>
-                        
-                        <div id="cityEle">
                             <label for="city">شہر</label>
                             <input type="text" id="city" required>
                         </div>
+                        <!-- <div class="attendantInfo">
+                            <label for="name">نام</label>
+                            <input type="text" id="name" required>
+                            
+                            <label for="age">عمر</label>
+                            <input type="number" id="age" required>
+                            
+                            <label for="sex">جنس</label>
+                            <select id="sex" required>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                            
+                            <label for="education">تعلیم</label>
+                            <input type="text" id="education" required>
+                          
+                            <label for="city">شہر</label>
+                            <input type="text" id="city" required>
+                        </div> -->
                         
+                        <input type="submit" value="Submit">
                     </form>
-                    <input type="submit" value="Submit">
                 </div>
             </div>
             
@@ -197,17 +226,27 @@
     <script>
         const activeLinkColour = "#fff";
         const unactiveLinkColour = "rgb(219, 219, 202)";
-        const patientInfoForm = document.getElementById('patientInfoForm');
-        document.querySelectorAll('input[name="fav_language"]').forEach(elem => {
-            elem.addEventListener('change', ele => {
-                console.log('ele changed', elem.checked, elem.value);
-                // patientInfoForm.appendChild();
-                const newEle = document.getElementById("cityEle").cloneNode(true);
-                newEle.getElementsByTagName("input")[0].id = 'sadasd';
-                newEle.getElementsByTagName("label")[0].innerHTML = "Test field"
-                patientInfoForm.appendChild(newEle);
+        
+        const InfoForm = document.getElementById('InfoForm');
+        const patientInfoForm = document.getElementById("patientInfo");
+        const attendantInfoForm = document.getElementById("patientInfo").cloneNode(true);
+        attendantInfoForm.id = "attendantInfo";
+        
+        document.querySelectorAll('input[name="personInContact"]').forEach(person => {
+            person.addEventListener('change', () => {
+                InfoForm.appendChild(attendantInfoForm);
+                if(person.value === "patientSelf")
+                {
+                    patientInfoForm.querySelector('label[for="name"]').innerHTML = "نام";
+                    InfoForm.removeChild(document.getElementById("attendantInfo"));
+                }else{
+                    patientInfoForm.querySelector('label[for="name"]').innerHTML = "مریض کا نام ";
+                    InfoForm.appendChild(attendantInfoForm);
+                }
             })
         })
+
+
          
         var symptomsCheckboxList = document.querySelector('.Symptoms').querySelectorAll('input');
         const linkButton = document.getElementsByClassName('contactButton')[0];
@@ -219,37 +258,19 @@
         
        
         function submitForm() {
-            console.log([...patientInfoForm.getElementsByTagName("input")]);
-            // patientInfoForm.children.forEach(ele =>{
-            //     console.log(ele.name, ele.value);
-            // })
-            [...patientInfoForm.getElementsByTagName("input")].forEach(ele => {
-                console.log(ele.value, ele.id);
+            var formData = {};
+            [...patientInfoForm.getElementsByTagName('input')].forEach(field => {
+                console.log(field.value, field.id);
+                formData["Patient "+ field.id] = field.value;
+            });
+            
+            [...attendantInfoForm.getElementsByTagName('input')].forEach(field => {
+                console.log(field.value, field.id);
+                if(field.value){
+                    formData["Attendant "+ field.id] = field.value;
+                }
             })
-            var name = document.getElementById("name").value;
-            var age = document.getElementById("age").value;
-            var sex = document.getElementById("sex").value;
-            var education = document.getElementById("education").value;
-            var city = document.getElementById("city").value;
-
-            if (!name || !age || !sex || !education || !city) {
-                alert("Please fill out all fields");
-                return false;
-            }
-
-            // Create an object to store the form data
-            var formData = {
-                Name: name,
-                Age: age,
-                Sex: sex,
-                Education: education,
-                City: city
-            };
-
-            // Convert the object to a JSON string
             var formDataString = JSON.stringify(formData);
-
-            // Log the JSON string
             console.log(formDataString);
 
             closePopup();
