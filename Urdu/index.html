@@ -157,13 +157,13 @@
                 <!-- <p>آپ اپنی ذات میں مذکورہ بالا میں سے جو علامات پاتے ہیں انہیں کلک/ٹیپ کریں <br> اس عمل کی تکمیل پر "چیٹ اون ویٹس ایپ" بٹن پر کلک کریں۔</p> -->
                 
                 <div>
-                <h2>Popup Form</h2>
+                    <h2>Popup Form</h2>
                     <div class="personInContact">
                         <div class = "Logo" style="display: inline-block; width: fit-content;"> 
                             <img class = "Logo_img" src="../Resources/logo.png" alt="Logo">  
                             <img class = "Name_img" src="../Resources/name.png" alt="Name">
                         </div>
-                        <span style="position: relative; bottom: 4px;">سے رابطے میں رہنے والا</span>
+                        <span style="position: relative; bottom: 8px;">سے رابطے میں رہنے والا</span>
                         <br>
                         <input type="radio" id="patientSelf" name="personInContact" value="patientSelf" checked>
                         <label for="patientSelf">مریض خود</label>
@@ -172,48 +172,36 @@
                     </div>
 
                     
-                    <form id="InfoForm" onsubmit="return submitForm()">
-                        <div id="patientInfo">
-                            <label for="name">نام</label>
-                            <input type="text" id="name" required>
-                            
-                            <label for="age">عمر</label>
-                            <input type="number" id="age" required>
-                            
-                            <label for="sex">جنس</label>
-                            <select id="sex" required>
-                                <option value="Male">Male</option>
-                                <option value="Female">Female</option>
-                            </select>
-                            
-                            <label for="education">تعلیم</label>
-                            <input type="text" id="education" required>
-                        
-                            <label for="city">شہر</label>
-                            <input type="text" id="city" required>
-                        </div>
-                        <!-- <div class="attendantInfo">
-                            <label for="name">نام</label>
-                            <input type="text" id="name" required>
-                            
-                            <label for="age">عمر</label>
-                            <input type="number" id="age" required>
-                            
-                            <label for="sex">جنس</label>
-                            <select id="sex" required>
-                                <option value="Male">Male</option>
-                                <option value="Female">Female</option>
-                            </select>
-                            
-                            <label for="education">تعلیم</label>
-                            <input type="text" id="education" required>
-                          
-                            <label for="city">شہر</label>
-                            <input type="text" id="city" required>
-                        </div> -->
-                        
-                        <input type="submit" value="Submit">
+                    <form id="InfoForm" class="InfoForm" onsubmit="return submitForm()">
+                        <div class="patientInfo subForm">
+                            <h3 style="grid-column: 1 / span 2;"><span>مریض کی معلومات</span></h3>
+                            <div class="name field" style="grid-column: 1 / span 2;">
+                                <label for="name">نام</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="age field" style="grid-column: 1 / span 1;">
+                                <label for="age">عمر</label>
+                                <input type="number" max="150" id="age" required>
+                            </div>
+                            <div class="gender field" style="grid-column: 2 / span 1;">
+                                <label for="gender">جنس</label>
+                                <select id="gender" required>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </div>                            
+                            <div class="education field" style="grid-column: 1 / span 2;">
+                                <label for="education">تعلیم</label>
+                                <input type="text" id="education" required>
+                            </div>                                                
+                            <div class="city field" style="grid-column: 1 / span 2;">
+                                <label for="city">شہر</label>
+                                <input type="text" id="city" required>
+                            </div>
+                            <br>
+                        </div>                       
                     </form>
+                    <input type="submit" form="InfoForm" value="Submit">
                 </div>
             </div>
             
@@ -227,21 +215,23 @@
         const activeLinkColour = "#fff";
         const unactiveLinkColour = "rgb(219, 219, 202)";
         
-        const InfoForm = document.getElementById('InfoForm');
-        const patientInfoForm = document.getElementById("patientInfo");
-        const attendantInfoForm = document.getElementById("patientInfo").cloneNode(true);
-        attendantInfoForm.id = "attendantInfo";
-        
+        const InfoForm = document.getElementsByClassName('InfoForm')[0];
+        const patientInfoForm = document.getElementsByClassName("patientInfo subForm")[0];
+        const attendantInfoForm = patientInfoForm.cloneNode(true);
+        var formDataString;
+
+        attendantInfoForm.setAttribute('class', "attendantInfo subForm");
+        attendantInfoForm.querySelector('span').innerHTML = "سرپرست/اٹینڈنٹ کی معلومات";
+
         document.querySelectorAll('input[name="personInContact"]').forEach(person => {
             person.addEventListener('change', () => {
                 InfoForm.appendChild(attendantInfoForm);
                 if(person.value === "patientSelf")
                 {
-                    patientInfoForm.querySelector('label[for="name"]').innerHTML = "نام";
-                    InfoForm.removeChild(document.getElementById("attendantInfo"));
+                    InfoForm.removeChild(document.getElementsByClassName("attendantInfo subForm")[0]);
                 }else{
-                    patientInfoForm.querySelector('label[for="name"]').innerHTML = "مریض کا نام ";
-                    InfoForm.appendChild(attendantInfoForm);
+
+                    InfoForm.insertBefore(attendantInfoForm, InfoForm.querySelector('input[type="submit"]'));
                 }
             })
         })
@@ -270,7 +260,7 @@
                     formData["Attendant "+ field.id] = field.value;
                 }
             })
-            var formDataString = JSON.stringify(formData);
+            formDataString = JSON.stringify(formData);
             console.log(formDataString);
 
             closePopup();
@@ -350,6 +340,7 @@
         function messageConsultant()
         {
             var messageText =   hrefStart +
+                                formDataString + "%0D%0A" +
                                 document.getElementById('view_chartNo1').innerHTML + "%0D%0A" +
                                 document.getElementById('view_chartNo2').innerHTML + "%0D%0A" +
                                 document.getElementById('view_chartNo3').innerHTML + "%0D%0A"
