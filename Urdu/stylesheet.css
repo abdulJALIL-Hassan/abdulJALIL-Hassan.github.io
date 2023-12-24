@@ -227,6 +227,12 @@ input[type="checkbox"]:checked ~ span {
     display: none;
 }
 
+.popupWindow button{
+    
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 .popupContent {
     direction: rtl;
     width: 95%;
@@ -237,11 +243,6 @@ input[type="checkbox"]:checked ~ span {
 }
 .popupContent h2{
     text-align: center;
-}
-.popupWindow button{
-    background: none;
-    border: none;
-    cursor: pointer;
 }
 .InfoForm {
     display: flex;
