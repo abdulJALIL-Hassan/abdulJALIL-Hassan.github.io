@@ -4,7 +4,7 @@
     
     *{
         font-family: 'Noto Nastaliq Urdu', serif;
-        scroll-padding-top: 2.5rem;
+        /* scroll-padding-top: 2.5rem; */
     }
     body{
         background-image: url(../Resources/backgroungOverlay.jpg);
@@ -13,6 +13,8 @@
     
     header{
         background-color: #fff;
+        position: sticky;
+        top: 0;
     }
     
     .mainNav{
@@ -274,7 +276,7 @@
         }
     
         .inpageNav{
-            top: 0;
+            top: 2.625rem;
         }
         .Logo_img{
             height: 2.825em;
@@ -296,7 +298,7 @@
     
         .inpageNav{
             height: 2rem;
-            top: 0;       
+            top: 2.625rem;       
         }
         .inpageNav > a{
             font-size: 0.8rem;
@@ -334,7 +336,7 @@
     
         .inpageNav{
             height: 2.5rem;
-            top: 0;       
+            top: 3.125rem;       
         }
        
         .inpageNav > a{
