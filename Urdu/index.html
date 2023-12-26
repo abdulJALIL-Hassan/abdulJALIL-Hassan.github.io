@@ -25,17 +25,19 @@
             
             <button class = "navMenuButton" onclick="showNavMenu()"><img src="../Resources/MenuIcon.svg" alt=""></button>
             <div class = "navLinks">
-                <a class = "about Link" href="about.html">ہمارے متعلق</a>               
-                <a class = "symptomPage Link active" href="#">روحانی چیک اپ</a>
-                <a href="../Resources/AzkarENawi.pdf">اذکار نبوی</a>
+                <a class = "about Link" href="about.html">ہمارے متعلق</a>
+                <a href="#">روحانی بیماریاں</a>
+                <a href="../Resources/AzkarENawi.pdf">اذکار نبوی<em style = "font-size: 0.4rem; font-style: normal;">ﷺ</em></a>
+                <a class = "symptomPage Link active" href="#">روحانی چیک اپ و علاج</a>
             </div>
         </nav>
     </header>
 
     <nav class="sideNav inactive">
-        <a class = "about Link" href="about.html">ہمارے متعلق</a>               
-        <a class = "symptomPage Link active" href="#">روحانی چیک اپ</a>
-        <a href="../Resources/'1. Neend say Baidari k Azkar-e-Nabvi (s.a.w).pdf">اذکار نبوی</a>
+        <a class = "about Link" href="about.html">ہمارے متعلق</a>
+        <a href="#">روحانی بیماریاں</a>
+        <a href="../Resources/AzkarENawi.pdf">اذکار نبوی<em style = "font-size: 0.4rem; font-style: normal;">ﷺ</em></a>
+        <a class = "symptomPage Link active" href="#">روحانی چیک اپ و علاج</a>
     </nav>
     
     
@@ -145,23 +147,18 @@
     <dialog id="infoFormDialog">
         <button class="dialogCloseButton" onclick="closeInfoFormDialog()"><img src="../Resources/closeButton.svg" alt="close"></button>
         <div class="dialogContent">
-            <h2>مریض کی معلومات</h2>
+            <h2>مریض کے متعلق معلومات</h2>
             <div class="personInContact">
-                <div class = "Logo" style="display: inline-block; width: fit-content;"> 
-                    <img class = "Logo_img" src="../Resources/logo.png" alt="Logo">  
-                    <img class = "Name_img" src="../Resources/name.png" alt="Name">
-                </div>
-                <span style="position: relative; bottom: 8px;">سے رابطے میں رہنے والا</span>
-                <br>
                 <input type="radio" id="patientSelf" name="personInContact" value="patientSelf" checked>
-                <label for="patientSelf">مریض خود</label>
+                <label for="patientSelf" style="font-size: 1.2rem; font-weight: bold">مریض خود</label>
+                <br>
                 <input type="radio" id="attendant" name="personInContact" value="attendant">
-                <label for="attendant">سرپرست/اٹینڈنٹ</label>
+                <label for="attendant" style="font-size: 1.2rem; font-weight: bold;">مریض کا سرپرست/اٹینڈنٹ</label>
             </div>
             
             <form id="InfoForm" class="InfoForm" formmethod="dialog" onsubmit="return submitForm()">
                 <div class="patientInfo subForm">
-                    <h3 style="grid-column: 1 / span 2;"><span>مریض کی معلومات</span></h3>
+                    <h3 style="grid-column: 1 / span 2;"><span>مریض</span></h3>
                     <div class="name field" style="grid-column: 1 / span 2;">
                         <label for="name">نام</label>
                         <input type="text" name="name "id="name" required>
@@ -206,7 +203,7 @@
     <dialog id="instructionDialog">
         <button class="dialogCloseButton" onclick="instructionDialog.close()"><img src="../Resources/closeButton.svg" alt="close"></button>
         <div class="dialogContent">
-            <h2>روحانی چیک اپ</h2>
+            <h2>چیک اپ کے لئے ہدایات</h2>
             <ul>
                 <li>آپ اپنی ذات میں ’’درج ذیل چارٹس‘‘ میں سے جو علامات پاتے ہیں انہیں کلک/ٹیپ کریں</li>
                 <li>اس عمل کی تکمیل پر <em style = "font-family: Arial, Helvetica, sans-serif; color: #25D366; font-style: normal; font-weight: 600;">Chat on WhatsApp</em> بٹن پر کلک کریں۔</li>
@@ -220,7 +217,7 @@
         const activeLinkColour = "#fff";
         const unactiveLinkColour = "rgb(219, 219, 202)";
         
-        var isInfoFormFilled = false;
+        var isInfoFormFilled = true;
         var isInstructionShown = false;
         var formDataString;
         
@@ -238,7 +235,7 @@
         // document.getElementById('dialogCloseButton').blur();
         
         attendantInfoForm.setAttribute('class', "attendantInfo subForm");
-        attendantInfoForm.querySelector('span').innerHTML = "مریض کے سرپرست/اٹینڈنٹ کی معلومات";
+        attendantInfoForm.querySelector('span').innerHTML = "سرپرست/اٹینڈنٹ";
 
         document.querySelectorAll('input[name="personInContact"]').forEach(person => {
             person.addEventListener('change', () => {
@@ -277,7 +274,7 @@
             instructionDialog.showModal();
             isInstructionShown = true;
             instructionDialog.addEventListener("click", e => {
-                const dialogDimensions = infoFormDialog.getBoundingClientRect()
+                const dialogDimensions = instructionDialog.getBoundingClientRect()
                 if (
                     e.clientX < dialogDimensions.left ||
                     e.clientX > dialogDimensions.right ||

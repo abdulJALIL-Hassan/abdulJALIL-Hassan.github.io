@@ -4,10 +4,10 @@
 
 *{
     font-family: 'Noto Nastaliq Urdu', serif;
-    scroll-padding-top: 2.5rem;
+    scroll-padding-top: 6rem;
 }
 body{
-    background-image: url(../Resources/backgroungOverlay.jpg);
+    background-color: rgb(253, 253, 239);
     margin: 0;
 }
 
