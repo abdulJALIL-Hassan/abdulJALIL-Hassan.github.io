@@ -136,10 +136,10 @@
         </div>
         <div class="checkedCheckBoxView">
             <p id="view_chartNo1">Chart1:</p>
-            <p id="view_chartNo2">Chart2:</p>
-            <p id="view_chartNo3">Chart3:</p>
+            <p id="view_chartNo2" class="blink">Chart2:</p>
+            <p id="view_chartNo3" class="blink">Chart3:</p>
         </div>
-        <a class="contactButton" aria-label="Chat on WhatsApp" href="#" onclick="messageConsultant()" target="_blank"> <img alt="Chat on WhatsApp" src="../Resources/WhatsAppButtonGreenSmall.svg"/> </a>
+        <a class="contactButton" aria-label="Chat on WhatsApp" href="#" onclick="messageConsultant()" > <img alt="Chat on WhatsApp" src="../Resources/WhatsAppButtonGreenSmall.svg"/> </a>
     </div>
     
     <p id="updatedOn" style="font-size: 10px; float: right; margin: 0 10px;"></p>
@@ -217,9 +217,12 @@
         const activeLinkColour = "#fff";
         const unactiveLinkColour = "rgb(219, 219, 202)";
         
-        var isInfoFormFilled = true;
+
+        var isInfoFormFilled = false;
         var isInstructionShown = false;
         var formDataString;
+        var isChart2Visited = false;
+        var isChart3Visited = false;
         
         const infoFormDialog = document.getElementById('infoFormDialog');
         const instructionDialog = document.getElementById('instructionDialog');
@@ -232,7 +235,6 @@
             document.getElementById('updatedOn').innerHTML = "Updated on: " + document.lastModified;
         
         openInfoFormDialog();
-        // document.getElementById('dialogCloseButton').blur();
         
         attendantInfoForm.setAttribute('class', "attendantInfo subForm");
         attendantInfoForm.querySelector('span').innerHTML = "سرپرست/اٹینڈنٹ";
@@ -356,7 +358,7 @@
         function populateChart(chartNo){
 
             var chartEle = document.getElementById(chartNo);
-            var htmlContent = '<li><label><input name="newsletter" type="checkbox" value="1"/><span>۔</span></label></li>';
+            var htmlContent = '<li><label><input type="checkbox" value="i +1"/><span>۔</span></label></li>';
             let path = "Resources/content.txt";
 
         }
@@ -364,6 +366,20 @@
         
         function displayChart(activeAnchor)
         {   
+            if(activeAnchor === 2)
+            {
+                isChart2Visited = true;
+                document.getElementById('view_chartNo2').setAttribute('class', "");
+                document.getElementById('view_chartNo2').style.color = "black";
+
+            }
+            if (activeAnchor === 3)
+            {
+                isChart3Visited = true;
+                document.getElementById('view_chartNo3').setAttribute('class', "");
+                document.getElementById('view_chartNo3').style.color = "black";
+            }
+
             let arr = [1, 2, 3];
             arr.forEach(function(anchor){
                 if(anchor == activeAnchor){
@@ -394,12 +410,21 @@
         
         function messageConsultant()
         {
-            var messageText =   hrefStart +
-                                formDataString + "%0D%0A" +
-                                document.getElementById('view_chartNo1').innerHTML + "%0D%0A" +
-                                document.getElementById('view_chartNo2').innerHTML + "%0D%0A" +
-                                document.getElementById('view_chartNo3').innerHTML + "%0D%0A"
-            linkButton.setAttribute('href', messageText);
+            if(isChart2Visited && isChart3Visited)
+            {
+                
+                var messageText =   hrefStart +
+                                    formDataString + "%0D%0A" +
+                                    document.getElementById('view_chartNo1').innerHTML + "%0D%0A" +
+                                    document.getElementById('view_chartNo2').innerHTML + "%0D%0A" +
+                                    document.getElementById('view_chartNo3').innerHTML + "%0D%0A";
+                linkButton.setAttribute('target', "_blank")
+                linkButton.setAttribute('href', messageText);
+            }else{
+                [...document.querySelectorAll('.blink')].forEach(ele => {
+                    ele.style.color = "red";
+                })
+            }
         }
     
     </script>

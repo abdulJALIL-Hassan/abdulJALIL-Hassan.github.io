@@ -217,13 +217,12 @@ dialog::backdrop{
 }
 
 
-.dialogCloseButton, .dialogCloseButton:focus-visible{
+.dialogCloseButton {
     position: sticky;
     top: 0;
     background: none;
     border: none;
     cursor: pointer;
-    outline: 1px black solid;
 }
 
 .dialogContent {
@@ -293,6 +292,16 @@ input[type="submit"] {
     border: none;
     cursor: pointer;
 }
+
+.blink {
+    animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+    50% {
+    opacity: 0;
+    }
+}
+  
 
 
 
