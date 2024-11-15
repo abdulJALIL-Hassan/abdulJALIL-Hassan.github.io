@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Huda Rohani Clinic</title>
+
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+
+   
+</head>
+
+
+
+<body>
+    <header>
+        <nav class = "mainNav">
+            <div class = "Logo"> 
+                        <img class = "Logo_img" src="../Resources/logo.png" alt="Logo">  
+                        <img class = "Name_img" src="../Resources/name.png" alt="Name">
+            </div>
+            
+            <button class = "navMenuButton" onclick="showNavMenu()"><img src="../Resources/MenuIcon.svg" alt=""></button>
+            <div class = "navLinks">
+                <a class = "about Link" href="about.html">ہمارے متعلق</a>
+                <a href="#">روحانی بیماریاں</a>
+                <a href="../Resources/AzkarENawi.pdf">اذکار نبوی<em style = "font-size: 0.4rem; font-style: normal;">ﷺ</em></a>
+                <a class = "symptomPage Link active" href="#">روحانی چیک اپ و علاج</a>
+            </div>
+        </nav>
+    </header>
+
+    <nav class="sideNav inactive">
+        <a class = "about Link" href="about.html">ہمارے متعلق</a>
+        <a href="#">روحانی بیماریاں</a>
+        <a href="../Resources/AzkarENawi.pdf">اذکار نبوی<em style = "font-size: 0.4rem; font-style: normal;">ﷺ</em></a>
+        <a class = "symptomPage Link active" href="#">روحانی چیک اپ و علاج</a>
+    </nav>
+    
+    
+    <nav class = "inpageNav">
+        <a id="anchorToChartNo1" href="#chartNo1" onclick="displayChart(1)">چارٹ ۱</a>
+        <a id="anchorToChartNo2" href="#chartNo2" onclick="displayChart(2)">چارٹ ۲</a>
+        <a id="anchorToChartNo3" href="#chartNo3" onclick="displayChart(3)">چارٹ ۳</a>
+    </nav>
+
+
+    <div class = "Symptoms">        
+        <ol id="chartNo1">
+            <li><label><input type="checkbox" value="1"/><span>انسان کا جسمانی اور ذہنی طور پر گھٹن و جھکڑن محسوس کرنا۔</span></label></li>
+            <li><label><input type="checkbox" value="2"/><span>بغیر کسی ظاہری وجہ کے خوف میں مبتلا رہنا۔</span></label></li>
+            <li><label><input type="checkbox" value="3"/><span>بغیر کسی ظاہری وجہ کے مایوسی میں مبتلا رہنا۔</span></label></li>
+            <li><label><input type="checkbox" value="4"/><span>اندھیرے میں ڈرنا اور اندھیرے سے ڈرنا۔</span></label></li>
+            <li><label><input type="checkbox" value="5"/><span>تنہائی میں ڈرنا۔</span></label></li>
+            <li><label><input type="checkbox" value="6"/><span>اپنے پیچھے کسی کی موجودگی کا احساس ہونا، پلٹ کر دیکھنا تو کوئی نہ ہونا۔</span></label></li>
+            <li><label><input type="checkbox" value="7"/><span>ان دیکھی مخلوق کی سرگوشیوں، سانسوں، رونے، سسکنے، ہنسنے، کھانسنے، چلنے، دوڑنے اور چھلانگیں لگانے کی آوازیں سننا۔</span></label></li>
+            <li><label><input type="checkbox" value="8"/><span>اونچے، لمبے اور کبھی چھوٹے قد کے ہیولے دیکھنا۔</span></label></li>
+            <li><label><input type="checkbox" value="9"/><span>اپنے نام کی پکار سننا مگر کسی کا نظر نہ آنا۔</span></label></li>
+            <li><label><input type="checkbox" value="10"/><span>خوابوں میں خود کو بلندیوں(پہاڑوں،اونچی عمارتوں) پر چلتے دیکھنا۔</span></label></li>
+            <li><label><input type="checkbox" value="11"/><span>خوابوں میں خود کو اڑتے دیکھنا۔</span></label></li>
+            <li><label><input type="checkbox" value="12"/><span>خوابوں میں خود کو جھولا جھولتے دیکھنا۔</span></label></li>
+            <li><label><input type="checkbox" value="13"/><span>خوابوں میں جہاز، گاڑی، موٹرسائیکل، سائیکل اڑانا۔</span></label></li>
+            <li><label><input type="checkbox" value="14"/><span>نیم خوابی میں خود کو بلندی سے گرتے دیکھنا اور زمین پر پڑنے سے پہلے جھٹکے سے آنکھ کھل جانا۔</span></label></li>
+            <li><label><input type="checkbox" value="15"/><span>خوابوں میں ڈراؤنی شکلیں دیکھنا۔</span></label></li>
+            <li><label><input type="checkbox" value="16"/><span>سوتے میں ڈر کر اور جھٹکا کھا کر اٹھ جانا اور اپنے جسم میں تھر تھراہٹ پانا۔</span></label></li>
+            <li><label><input type="checkbox" value="17"/><span>خواب میں سانپ، کتے، کوّے، بلیاں، بھینسیں، اونٹ، شیر، سؤر اور دیگر جانور دیکھنا۔</span></label></li>
+            <li><label><input type="checkbox" value="18"/><span>خواب میں پہاڑ، سمندر اور ویرانے دیکھنا۔</span></label></li>
+            <li><label><input type="checkbox" value="19"/><span>سوتے میں یوں لگنا کہ بدن کے اوپر سے بلی وغیرہ گزر گئی ہے۔</span></label></li>
+            <li><label><input type="checkbox" value="20"/><span>سوتے میں بدن پر دباؤ پڑنا یا طاقتور چیز سے کشتی ہونا، چیخنے کی کوشش کرنا مگر آواز نہ نکلنا، گلہ گھٹنے جیسی آوازیں نکلنا، تڑپنا اور گھر والوں کی طرف سے زور سے ہلا کر جگا دیا جانا اور پوچھنا کہ تمہیں کیا ہوا ہے؟۔</span></label></li>
+            <li><label><input type="checkbox" value="21"/><span>سوتے میں کسی کی طرف سے خود کو ہلا کر جگا دیا جانا مگر جاگنے پر کوئی نظر نہ آنا۔</span></label></li>
+            <li><label><input type="checkbox" value="22"/><span>خوابوں میں فوت شدہ لوگوں کو دیکھنا۔</span></label></li>
+            <li><label><input type="checkbox" value="23"/><span>اتنا یاد رہنا کہ کوئی خواب دیکھا ہے لیکن خواب کا بھول جانا۔</span></label></li>
+            <li><label><input type="checkbox" value="24"/><span>گاہے گاہے ’’قابو میں نہ آنے والی‘‘ ہنسی یا رونے، یا غصے یا غم یا خوف کی کیفیت طاری ہو جانا۔</span></label></li>
+            <li><label><input type="checkbox" value="25"/><span>اچانک تیز خوشبو یا بدبو آنا شروع ہو جانا مگر پتہ نہ چلنا کہ کہاں سے آرہی ہے۔</span></label></li>
+            <li><label><input type="checkbox" value="26"/><span>اکثر گوشت اور بالوں کے جلنے کے جیسی بو(سڑاند) کا آنا۔</span></label></li>
+            <li><label><input type="checkbox" value="27"/><span>خواتین کو سوتے میں کسی کے ساتھ ہونے کا احساس ہونا مگر جاگنے پر کچھ نطر نہ آنا۔</span></label></li>
+            <li><label><input type="checkbox" value="28"/><span>خواتین کی رانوں اور سینے پر چوٹ کے نیل جیسے(بغیر درد کے) نشان پڑنا اور چند دنوں بعد غائب ہو جانا۔</span></label></li>
+            <li><label><input type="checkbox" value="29"/><span>مختلف بیماریوں کی سخت تکلیف محسوس کرنا مگر میڈیکل ٹیسٹ کلیئر آنا۔</span></label></li>
+            <li><label><input type="checkbox" value="30"/><span>انسان پر غائب الدماغی کی کیفیت طاری ہو جانا اور اس کی آنکھیں فضا میں کسی جگہ ٹِک جانا۔</span></label></li>
+            <li><label><input type="checkbox" value="31"/><span>انسان کا اچانک غش کھا کر گر پڑنا، جسم میں تھر تھراہٹ ہونا اور ہاتھ پاؤں ٹیڑھے ہو جانا۔</span></label></li>
+            <li><label><input type="checkbox" value="32"/><span>جنّ کا انسان میں حاضر ہو کر مریض کی زبان میں باتیں کرنا۔</span></label></li>
+            <li><label><input type="checkbox" value="33"/><span>جنات، جادو اور نظربد کو ماننے سے انکار کرنا۔</span></label></li>
+        </ol>
+
+        <ol id="chartNo2">
+            <li><label><input type="checkbox" value="1"/><span>انسان پر نا معلوم طرف سے پانی یا خون کے چھینٹے پڑنا۔</span></label></li>
+            <li><label><input type="checkbox" value="2"/><span>انسان کے کپڑوں کا دوسرں کے کپڑوں میں رکھے رکھے کٹ جانا یا جل جانا۔</span></label></li>
+            <li><label><input type="checkbox" value="3"/><span>گھر میں نا معلوم طرف سے پتھر پڑنا۔</span></label></li>
+            <li><label><input type="checkbox" value="4"/><span>گھر کے کسی گوشے میں نا معلوم وجہ سے آگ لگ جانے کے واقعات ہونا۔</span></label></li>
+            <li><label><input type="checkbox" value="5"/><span>بدن پر اچانک جگہ جگہ کٹ لگ جانے کے واقعات ہونا۔</span></label></li>
+            <li><label><input type="checkbox" value="6"/><span>خوابوں میں خونریزی ہوتے دیکھنا۔</span></label></li>
+            <li><label><input type="checkbox" value="7"/><span>خوابوں میں دیکھنا کہ کوئی مجھے قتل کرنے لگا ہے, بھاگنے کی کوشس کرنا لیکن بدن کا بھاری ہو جانا اور بھاگا نہ جانا، سخت واویلہ و چیخ و پکار کرنا اور گھروالوں کی طرف سے زور سے ہلا کر جگا دیا جانا اور پوچھنا کہ تمہیں کیا ہوا ہے؟</span></label></li>
+            <li><label><input type="checkbox" value="8"/><span>خوابوں میں بڑا گوشت دیکھنا۔</span></label></li>
+            <li><label><input type="checkbox" value="9"/><span>خوابوں میں انسانی نجاست دیکھنا۔</span></label></li>
+            <li><label><input type="checkbox" value="10"/><span>خوابوں میں برہنہ مناظر دیکھنا۔</span></label></li>
+            <li><label><input type="checkbox" value="11"/><span>اپنے کو مجبور و بے بس محسوس کرنا اور ہر کام زبردستی کرائے جانے کا احساس ہونا۔</span></label></li>
+            <li><label><input type="checkbox" value="12"/><span>دوائیوں کا چند دن اثر کرنے کے بعد بے اثر ہو جانا۔</span></label></li>
+            <li><label><input type="checkbox" value="13"/><span>اکثر کچی نیند آنا اور اٹھنے کے بعد جسم کا ایسے درد کرنا جیسے بہت مارا گیا ہے۔</span></label></li>
+            <li><label><input type="checkbox" value="14"/><span>انسان کا خیال کرنا کہ وہ فلاں کام کر چکا ہے مگر نہ کیا ہونا۔</span></label></li>
+            <li><label><input type="checkbox" value="15"/><span>خوبصورت اور برسر روزگار لڑکے یا خوبصورت لڑکی کی منگنی نہ ہونا یا منگنی ہو کر بار بار ٹوٹ جانا۔</span></label></li>
+            <li><label><input type="checkbox" value="16"/><span>کسی خوبصورت اور نوبیاہتا جوڑے کا وظیفہ زوجیت ادا کرنے پر قادر نہ ہو سکنا۔</span></label></li>
+            <li><label><input type="checkbox" value="17"/><span>طبی طور پر فٹ جوڑے کا سالہا سال اولاد سے محروم ہونا۔</span></label></li>
+            <li><label><input type="checkbox" value="18"/><span>کسی میاں بیوی میں سے کسی ایک کو یا دونوں کو دوسرے کی شکل بغیر کسی وجہ کے اچانک بری لگنا شروع ہو جانا، دوسرے کے پاس خود بیٹھنے یا دوسرا پاس آبیٹھے تو سخت بیزاری شروع ہو جانا، دونوں میں علیحدگی ہو جانا، حتی کہ طلاق کی بات چل نکلنا۔</span></label></li>
+            <li><label><input type="checkbox" value="19"/><span>طبیعت میں ’بے جا‘غصہ، نفرت، کینہ، بغض، حسد ، عناد ، شک ، بات کا منفی پہلو لینے، تنقید و نکتہ چینی کرنے کی عادت کا در آنا۔</span></label></li>
+            <li><label><input type="checkbox" value="20"/><span>دوستوں اور بچوں کا پاس آنے سے احتراز کرنا اور خود بھی تنہائی پسند ہو جانا۔</span></label></li>
+            <li><label><input type="checkbox" value="21"/><span>انسان کاروباری ہے تو بغیر کسی ظاہری وجہ کے کاروبار میں اچانک مندی شروع ہو جانا، دکاندار ہے تو گاہکوں کا آنا بند ہو جانا اور اگر ملازمت پیشہ ہے تو افسروں سے تعلقات خراب ہو جانا۔</span></label></li>
+            <li><label><input type="checkbox" value="22"/><span>اہل خانہ، اہل خاندان اور احباب سے بغیر کسی خاص وجہ کے لڑائی شروع ہو جانا۔</span></label></li>
+            <li><label><input type="checkbox" value="23"/><span>خوابوں میں بچھو اور چھپکلیاں دیکھنا۔</span></label></li>
+            <li><label><input type="checkbox" value="24"/><span>خوابوں میں کفار کے عبادت خانے(گرجے، مندر، گردوارے وغیرہ) دیکھنا۔</span></label></li>
+            <li><label><input type="checkbox" value="25"/><span>خوابوں میں مردے اور قبرستان دیکھنا۔</span></label></li>
+            <li><label><input type="checkbox" value="26"/><span>بغیر کسی معالج کے کہے گائے کا گوشت کھانا بند کر دینا اور اس کے لانے، کھانے کی بات پر سخت غصہ کرنا۔</span></label></li>
+            <li><label><input type="checkbox" value="27"/><span>آذان، نماز، تلاوت اور ذکر و اذکار سے بےزاری اور دینی شخصیات سے چڑ شروع ہو جانا۔</span></label></li>
+        </ol>
+
+        <ol id="chartNo3">
+            <li><label><input type="checkbox" value="1"/><span>خوبصورت و صحت مند انسان(بچے، بچی، لڑکے، لڑکی، مرد، عورت) کا کسی ظاہری وجہ (مثلا کم خوراکی و بیماری وغیرہ) کے بغیر کمزور اور دبلا پتلا ہونا شروع ہو جانا۔</span></label></li>
+            <li><label><input type="checkbox" value="2"/><span>خوبصورت شخصیت کے چہرے پر بغیر کسی جسمانی بیماری کے کالے دھبے پڑنا اور چہرے اور بدن پر دانے نکلنا شروع ہو جانا۔</span></label></li>
+            <li><label><input type="checkbox" value="3"/><span>خوبصورت و پرکشش انسان کا بغیر کسی بیماری کے چہرہ زرد، ویران، بے رونق و اجڑا ہوا ہو جانا اور بال جھڑنا شروع ہو جانا۔</span></label></li>
+            <li><label><input type="checkbox" value="4"/><span>خوبصورت شخصیت کا اپنی صفائی ستھرائی اور بننے سنورنے سے بے نیاز ہو جانا۔</span></label></li>
+            <li><label><input type="checkbox" value="5"/><span>حسین و جمیل انسان کا اچانک شدید بخار، بے ہوشی اور کسی اور بیماری میں مبتلا ہو جانا جبکہ میڈیکل ٹیسٹ بھی کلیئر آنا اور آسیب و جادو کے اثرات ثابت نہ ہونا۔</span></label></li>
+            <li><label><input type="checkbox" value="6"/><span>دودھ پیتے صحت مند بچے کا دودھ پینے سے منہ موڑ لینا۔</span></label></li>
+            <li><label><input type="checkbox" value="7"/><span>خوب کھانے پینے والے صحت مند بچے کا کھانے پینے سے منہ موڑ جانا۔</span></label></li>
+            <li><label><input type="checkbox" value="8"/><span>ذہین و شائیننگ طالب علم کا پڑھائی سے منہ موڑ جانا اور سبق بالکل یاد نہ ہونا۔</span></label></li>
+            <li><label><input type="checkbox" value="9"/><span>انسان میں اچانک درد کا آنکھوں، کنپٹیوں سے شروع ہونا اور پورے بدن میں پھیل جانا۔</span></label></li>
+            <li><label><input type="checkbox" value="10"/><span>خوبصورت پھلتا پھولتا باغ مرجھانا، کھیت ویران، کاروبار مندا اور مکان بیٹھنا یا خراب ہونا شروع ہو جانا جبکہ آسیب و جادو کے اثرات بھی ثابت نہ ہونا۔</span></label></li>
+
+        </ol>  
+            
+    </div>
+
+    <div class="messagePreviewBox">
+        <div class="enteredInfoView">
+        </div>
+        <div class="checkedCheckBoxView">
+            <p id="view_chartNo1">Chart1:</p>
+            <p id="view_chartNo2" class="blink">Chart2:</p>
+            <p id="view_chartNo3" class="blink">Chart3:</p>
+        </div>
+        <a class="contactButton" aria-label="Chat on WhatsApp" href="#" onclick="messageConsultant()" > <img alt="Chat on WhatsApp" src="../Resources/WhatsAppButtonGreenSmall.svg"/> </a>
+    </div>
+    
+    <p id="updatedOn" style="font-size: 10px; float: right; margin: 0 10px;"></p>
+
+    <dialog id="infoFormDialog">
+        <button class="dialogCloseButton" onclick="closeInfoFormDialog()"><img src="../Resources/closeButton.svg" alt="close"></button>
+        <div class="dialogContent">
+            <h2>مریض کے متعلق معلومات</h2>
+            <div class="personInContact">
+                <input type="radio" id="patientSelf" name="personInContact" value="patientSelf" checked>
+                <label for="patientSelf" style="font-size: 1.2rem; font-weight: bold">مریض خود</label>
+                <br>
+                <input type="radio" id="attendant" name="personInContact" value="attendant">
+                <label for="attendant" style="font-size: 1.2rem; font-weight: bold;">مریض کا سرپرست/اٹینڈنٹ</label>
+            </div>
+            
+            <form id="InfoForm" class="InfoForm" formmethod="dialog" onsubmit="return submitForm()">
+                <div class="patientInfo subForm">
+                    <h3 style="grid-column: 1 / span 2;"><span>مریض</span></h3>
+                    <div class="name field" style="grid-column: 1 / span 2;">
+                        <label for="name">نام</label>
+                        <input type="text" name="name "id="name" required>
+                    </div>
+                    <div class="age field" style="grid-column: 1 / span 1;">
+                        <label for="age">عمر</label>
+                        <input type="number" max="150" name="age" id="age" required >
+                    </div>
+                    <div class="gender field" style="grid-column: 2 / span 1;">
+                        <label for="gender">جنس</label>
+                        <select name="gender" id="gender"  required>
+                            <option value="Male">Male</option>
+                            <option translate="yes"value="Female">Female</option>
+                        </select>
+                    </div>                            
+                    <div class="education field" style="grid-column: 1 / span 2;">
+                        <label for="education">تعلیم</label>
+                        <select name="education" id="education" required>
+                            <option value="Nill">Nill</option>
+                            <option value="Primary">Primary</option>
+                            <option value="Middle">Middle</option>
+                            <option value="Secondary School Certificate">Secondary School Certificate</option>
+                            <option value="Higher Secondary School Certificate">Higher Secondary School Certificate</option>
+                            <option value="Associate">Associate</option>
+                            <option value="Bachelor">Bachelor</option>
+                            <option value="Masters">Masters</option>
+                            <option value="Doctoral">Doctoral</option>
+                        </select>
+                        <!-- https://www.hec.gov.pk/english/services/universities/pqf/Pages/default.aspx -->
+                    </div>                                                
+                    <div class="city field" style="grid-column: 1 / span 2;">
+                        <label for="city">شہر</label>
+                        <input  list="cityList" type="text" name="city" id="city" required>
+                        <datalist id="cityList"></datalist>
+                    </div>
+                </div>                       
+            </form>
+            <input type="submit" form="InfoForm" value="Proceed">
+        </div>
+    </dialog>
+
+    <dialog id="instructionDialog">
+        <button class="dialogCloseButton" onclick="instructionDialog.close()"><img src="../Resources/closeButton.svg" alt="close"></button>
+        <div class="dialogContent">
+            <h2>چیک اپ کے لئے ہدایات</h2>
+            <ul>
+                <li>آپ اپنی ذات میں ’’درج ذیل چارٹس‘‘ میں سے جو علامات پاتے ہیں انہیں کلک/ٹیپ کریں</li>
+                <li>اس عمل کی تکمیل پر <em style = "font-family: Arial, Helvetica, sans-serif; color: #25D366; font-style: normal; font-weight: 600;">Chat on WhatsApp</em> بٹن پر کلک کریں۔</li>
+            </ul>
+        </div>
+    </dialog>
+
+
+
+    <script>
+        const activeLinkColour = "#fff";
+        const unactiveLinkColour = "rgb(219, 219, 202)";
+        
+
+        var isInfoFormFilled = false;
+        var isInstructionShown = false;
+        var formDataString;
+        var isChart2Visited = false;
+        var isChart3Visited = false;
+        
+        const infoFormDialog = document.getElementById('infoFormDialog');
+        const instructionDialog = document.getElementById('instructionDialog');
+
+        const mainInfoForm = document.getElementById('InfoForm');
+        const patientInfoForm = document.getElementsByClassName("patientInfo subForm")[0];
+        const attendantInfoForm = patientInfoForm.cloneNode(true);
+        
+        if (Date.parse(document.lastModified) != 0)
+            document.getElementById('updatedOn').innerHTML = "Updated on: " + document.lastModified;
+        
+        openInfoFormDialog();
+        
+        attendantInfoForm.setAttribute('class', "attendantInfo subForm");
+        attendantInfoForm.querySelector('span').innerHTML = "سرپرست/اٹینڈنٹ";
+
+        document.querySelectorAll('input[name="personInContact"]').forEach(person => {
+            person.addEventListener('change', () => {
+                mainInfoForm.appendChild(attendantInfoForm);
+                if(person.value === "patientSelf")
+                {
+                    mainInfoForm.removeChild(document.getElementsByClassName("attendantInfo subForm")[0]);
+                }else{
+
+                    mainInfoForm.insertBefore(attendantInfoForm, mainInfoForm.querySelector('input[type="submit"]'));
+                }
+            })
+        })
+
+
+        
+        const cityList = document.getElementById("cityList");
+        fetch("../Resources/PakistanCities.json").then( res => {return res.json()}).then(data => {
+            data.forEach( city => {
+                const cityOpt = document.createElement("option");
+                cityOpt.setAttribute('value', city);
+                cityList.appendChild(cityOpt);
+            })
+        }).catch(error => console.error('Error fetching JSON:', error));
+         
+        var symptomsCheckboxList = document.querySelector('.Symptoms').querySelectorAll('input');
+        const linkButton = document.getElementsByClassName('contactButton')[0];
+        const hrefStart = "https://wa.me/+923317075850?text=Assalamualikum%0D%0A";  
+        
+
+        displayChart(1);
+        symptomsCheckboxList.forEach(onlistChange);
+
+
+        function openInstructionDialog(){
+            instructionDialog.showModal();
+            isInstructionShown = true;
+            instructionDialog.addEventListener("click", e => {
+                const dialogDimensions = instructionDialog.getBoundingClientRect()
+                if (
+                    e.clientX < dialogDimensions.left ||
+                    e.clientX > dialogDimensions.right ||
+                    e.clientY < dialogDimensions.top ||
+                    e.clientY > dialogDimensions.bottom
+                ){
+                    instructionDialog.close();
+                }
+            });
+        }
+ 
+        function openInfoFormDialog(){
+            infoFormDialog.showModal();
+            infoFormDialog.addEventListener('keydown', e => {
+                if(e.code === "Escape"){
+                    e.preventDefault();
+                    closeInfoFormDialog();
+                }
+            });
+            infoFormDialog.addEventListener("click", e => {
+                const dialogDimensions = infoFormDialog.getBoundingClientRect()
+                if (
+                    e.clientX < dialogDimensions.left ||
+                    e.clientX > dialogDimensions.right ||
+                    e.clientY < dialogDimensions.top ||
+                    e.clientY > dialogDimensions.bottom
+                ){
+                    closeInfoFormDialog();
+                }
+            });
+        }
+
+        function closeInfoFormDialog(){
+            if(isInfoFormFilled){
+                infoFormDialog.close();
+                if(!isInstructionShown)
+                {
+                    openInstructionDialog();
+                }
+                return;
+            }
+            document.querySelector('input[type="submit"]').click();
+        }
+
+        function submitForm() {
+            isInfoFormFilled = true;
+            var formData = {};
+            [...patientInfoForm.getElementsByTagName('input'), ...patientInfoForm.getElementsByTagName('select')].forEach(field => {
+                console.log(field.value, field.id);
+                formData["Patient "+ field.id] = field.value;
+            });
+            [...attendantInfoForm.getElementsByTagName('input'), ...attendantInfoForm.getElementsByTagName('select')].forEach(field => {
+                console.log(field.value, field.id);
+                if(field.value){
+                    formData["Attendant "+ field.id] = field.value;
+                }
+            })
+            formDataString = JSON.stringify(formData);
+            closeInfoFormDialog();
+            return false;
+        }
+
+        function showNavMenu()
+        {
+            var menuButton = document.querySelectorAll(".sideNav")[0];
+
+            if(menuButton.getAttribute('class') == "sideNav inactive")
+            {
+                menuButton.setAttribute('class', 'sideNav active')
+            }
+            else if(menuButton.getAttribute('class') == "sideNav active")
+            {
+                menuButton.setAttribute('class', 'sideNav inactive')
+            }
+            
+        }
+
+
+        function populateChart(chartNo){
+
+            var chartEle = document.getElementById(chartNo);
+            var htmlContent = '<li><label><input type="checkbox" value="i +1"/><span>۔</span></label></li>';
+            let path = "Resources/content.txt";
+
+        }
+        
+        
+        function displayChart(activeAnchor)
+        {   
+            if(activeAnchor === 2)
+            {
+                isChart2Visited = true;
+                document.getElementById('view_chartNo2').setAttribute('class', "");
+                document.getElementById('view_chartNo2').style.color = "black";
+
+            }
+            if (activeAnchor === 3)
+            {
+                isChart3Visited = true;
+                document.getElementById('view_chartNo3').setAttribute('class', "");
+                document.getElementById('view_chartNo3').style.color = "black";
+            }
+
+            let arr = [1, 2, 3];
+            arr.forEach(function(anchor){
+                if(anchor == activeAnchor){
+                    document.getElementById("anchorToChartNo"+anchor).style.backgroundColor = activeLinkColour;
+                    document.getElementById("chartNo"+anchor).style.display = "block";
+                }else{
+                    document.getElementById("anchorToChartNo"+anchor).style.backgroundColor = unactiveLinkColour;
+                    document.getElementById("chartNo"+anchor).style.display = "none";
+                }
+            });
+        }
+
+
+        function onlistChange(checkbox) {
+            checkbox.addEventListener('change', function() {
+                let parent = checkbox.parentNode.parentNode.parentNode;
+                let parentListId = parent.getAttribute('id');
+                var checkboxList = document.querySelector('#' + parentListId).querySelectorAll('input');
+
+                var viewId = 'view_' + parentListId;
+
+
+                checkedCheckboxesList1 = Array.from(checkboxList).filter(i => i.checked).map(i => i.value);
+                document.getElementById(viewId).innerHTML = 'Chart' + viewId.match(/\d+/)[0] + ' : ' + checkedCheckboxesList1;
+            })
+        }
+        
+        
+        function messageConsultant()
+        {
+            if(isChart2Visited && isChart3Visited)
+            {
+                
+                var messageText =   hrefStart +
+                                    formDataString + "%0D%0A" +
+                                    document.getElementById('view_chartNo1').innerHTML + "%0D%0A" +
+                                    document.getElementById('view_chartNo2').innerHTML + "%0D%0A" +
+                                    document.getElementById('view_chartNo3').innerHTML + "%0D%0A";
+                linkButton.setAttribute('target', "_blank")
+                linkButton.setAttribute('href', messageText);
+            }else{
+                [...document.querySelectorAll('.blink')].forEach(ele => {
+                    ele.style.color = "red";
+                })
+            }
+        }
+    
+    </script>
+
+
+</body>
+</html>
+

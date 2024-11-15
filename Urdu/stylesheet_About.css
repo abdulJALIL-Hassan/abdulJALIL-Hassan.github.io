@@ -1,0 +1,332 @@
+:root {
+    --linkHoverColour: #ff0000;
+}
+
+*{
+    font-family: 'Noto Nastaliq Urdu', serif;
+    /* scroll-padding-top: 2.5rem; */
+}
+body{
+    background-color: rgb(253, 253, 239);
+    margin: 0;
+}
+
+header{
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+}
+
+.mainNav{
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    
+    
+    display: flex;
+    direction: rtl;
+    justify-content: space-between;
+}
+
+.Logo{
+    display: flex;
+    justify-content: right;
+}
+
+.Name_img{
+    align-self: flex-end;
+    padding-bottom: 0.5%;
+}
+
+.Logo_img{
+    align-self: flex-end;
+    padding-bottom: 0.5%;
+}
+
+.navLinks{
+    display: flex;
+}
+
+
+.navMenuButton{
+    border: none;
+    background: none;
+    align-self: center;
+    padding: 0;
+    cursor: pointer;
+}
+.sideNav.inactive{
+    display: none;
+}
+.sideNav.active{
+    height: 100%;
+    width: 2.425rem;
+    background-color: #fff;
+    
+    
+    position: fixed;
+    left: 0;
+    z-index: 1;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+    font-size: 0.7rem;
+}
+
+.sideNav > a{
+    writing-mode:vertical-lr;
+    display: block;
+    align-self: flex-end;
+    padding: 0.5rem 0 0.5rem 3%;
+    text-decoration: none;
+
+    color: #3e3f94
+}
+
+
+.navLinks > a{
+    display: block;
+    padding: 2% 0.5rem 0 0.5rem;
+    text-decoration: none;
+}
+
+.navLinks > .active , .sideNav > .active{
+    background-color: #dbdbca;
+}
+
+
+.inpageNav{
+    background-color: #dbdbca;
+    width: 90%;
+    margin: auto;
+    
+    position: sticky;
+    display: flex;
+    justify-content: space-evenly;
+    direction: rtl;
+    border-radius: 0 0 50px 50px;
+    box-shadow: 0 6px 20px -10px rgba(0, 0, 0, 0.7);
+
+}
+
+.inpageNav > a{
+    text-decoration: none;
+    padding: 0 0.5rem;
+    word-spacing: 3px;
+
+    color: #3e3f94
+}
+
+.inpageNav > .active {
+    background-color: #fff;
+}
+
+.content {
+    width: 90%;
+    margin: auto;
+    direction: rtl;
+    
+    padding-bottom: 2.5rem;
+
+}
+
+.content > .welcomeContent {
+    box-sizing: border-box;
+
+    height: 90vh;
+    width: 90%;
+
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+
+.welcomeContent > h1 {
+    font-size: calc(0.5rem + 2.5vw);
+    text-align: center;
+    font-weight: 200;
+}
+
+.content > h2 {
+    color: #3e3f94;
+}
+
+
+.content > .footerNavLinks{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    align-items: stretch;
+    flex-wrap: wrap;
+
+    
+    
+}
+
+@media only screen and (min-height: 500px){
+    .welcomeContent > .Logo {
+        flex-direction: column;
+        justify-content: center;
+        font-size: calc(1.25rem + 2.5vw);
+
+        gap: calc(50px - 0.0025vw);
+    }
+
+    .welcomeContent > .Logo > img {
+        align-self: center;
+    }
+    
+}
+
+@media only screen and (max-height: 500px)
+{
+    
+    .welcomeContent > h1 {
+        margin: 0 0;
+    }
+    .welcomeContent > .Logo {
+        font-size: calc(1rem + 2.5vw);
+    }
+}
+
+/* Extra small devices (phones, 425px and down) */
+@media only screen and (max-width: 500px) {
+    
+    header{
+        height: 2.125rem;
+        font-size: 0.7rem;
+            
+        position: sticky;
+        top: 0;
+    }
+    header > .mainNav{
+        width: 95%;
+    }
+    .Name_img{
+        height: 1.525em;
+    }
+    .Logo_img{
+        height: 2.825em;
+    }
+    .navLinks{
+        display: none;
+        gap: 0.7rem;
+    }
+
+    .inpageNav{
+        height: 2rem;
+        top: 2.125rem;       
+    }
+    
+    .inpageNav > a{
+        font-size: 0.7rem;
+    }
+
+    .content{
+        font-size: 1rem;
+    }
+}   
+
+
+/* Small devices (portrait tablets and large phones, 425px and up) */
+@media only screen and (min-width: 500px) {
+    
+    header{
+        height: 2.625rem;
+        font-size: 0.8rem;
+        
+    }
+    .Name_img{
+        height: 1.525em;
+
+    }
+
+    .inpageNav{
+        top: 2.625rem;
+    }
+    .Logo_img{
+        height: 2.825em;
+    }
+    .navLinks{
+        gap: 0.5rem;
+    }
+
+    .navMenuButton, .sideNav {
+        display: none;
+    }
+
+    a:hover {
+        color: var(--linkHoverColour);
+    }
+    a:hover, label > span:hover {
+        color: var(--linkHoverColour);
+    }
+
+    .inpageNav{
+        height: 2rem;
+        top: 2.625rem;       
+    }
+    .inpageNav > a{
+        font-size: 0.8rem;
+    }
+
+    .content{
+        font-size: 1.2rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+    header{
+        height: 3.125rem;
+        font-size: 1rem;
+    }
+    .Name_img{
+        height: 1.525em;
+    }
+    .Logo_img{
+        height: 2.825em;
+    }
+    .navLinks{
+        gap: 2rem;
+    }
+
+    .navMenuButton, .sideNav {
+        display: none;
+    }
+
+    a:hover, label > span:hover {
+        color: var(--linkHoverColour);
+    }
+
+    .inpageNav{
+        height: 2.5rem;
+        top: 3.125rem;       
+    }
+    
+    .inpageNav > a{
+        font-size: 1rem;
+    }
+
+    .content{
+        font-size: 1.3rem;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {}
+
+Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {} */
