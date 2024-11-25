@@ -3,14 +3,14 @@
         "id": 1,
         "venue": "Naaman Mussawir's House",
         "date": "2024-02-11T00:00:00+05:00",
-        "decisions_html_name": "1.html",
+        "decisions_html_name": null,
         "attendees": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
     },
     {
         "id": 2,
         "venue": "Abdul Malik's House",
         "date": "2024-11-03T00:00:00+05:00",
-        "decisions_html_name": null,
+        "decisions_html_name": "2.html",
         "attendees": [6, 7, 8, 9, 10, 11, 12, 13, 14]
     }
 ]
