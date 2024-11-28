@@ -1,0 +1,14 @@
+[
+    {
+        "id": 2,
+        "name": "Muhammad Bakhsh",
+        "date_of_birth": null,
+        "date_of_death": null,
+        "parent_id": null,
+        "is_external": false,
+        "married": true,
+        "died": true,
+        "gender": "M",
+        "ur_name": "محمد بخش"
+    }
+]

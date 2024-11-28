@@ -1,1346 +1,1346 @@
 [
     {
       "id": 2,
-      "en_name": "Ilm Deen",
+      "name": "Ilm Deen",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": null,
+      "parent_id": null,
       "is_external": false,
       "married": true,
       "died": true,
       "gender": "M",
-      "name": "علم دین"
+      "ur_name": "علم دین"
     },
     {
       "id": 4,
-      "en_name": "Abdul Majeed",
+      "name": "Abdul Majeed",
       "date_of_birth": "1919-01-01 00:00:00",
       "date_of_death": "2004-09-04 00:00:00",
-      "parentId": "2",
+      "parent_id": "2",
       "is_external": false,
       "married": true,
       "died": true,
       "gender": "M",
-      "name": "عبدالمجید"
+      "ur_name": "عبدالمجید"
     },
     {
       "id": 6,
-      "en_name": "Abdul Khaliq",
+      "name": "Abdul Khaliq",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "4",
+      "parent_id": "4",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "M",
-      "name": "عبدالخالق"
+      "ur_name": "عبدالخالق"
     },
     {
       "id": 8,
-      "en_name": "Abdul Rehman",
+      "name": "Abdul Rehman",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "4",
+      "parent_id": "4",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "M",
-      "name": "عبدالرحمن"
+      "ur_name": "عبدالرحمن"
     },
     {
       "id": 10,
-      "en_name": "Abdul Razzaq",
+      "name": "Abdul Razzaq",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "4",
+      "parent_id": "4",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "M",
-      "name": "عبدالرزاق"
+      "ur_name": "عبدالرزاق"
     },
     {
       "id": 12,
-      "en_name": "Abdul Malik",
+      "name": "Abdul Malik",
       "date_of_birth": "1967-03-11 00:00:00",
       "date_of_death": null,
-      "parentId": "4",
+      "parent_id": "4",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "M",
-      "name": "عبدالملک"
+      "ur_name": "عبدالملک"
     },
     {
       "id": 15,
-      "en_name": "Inamullah",
+      "name": "Inamullah",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "6",
+      "parent_id": "6",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "M",
-      "name": "انعام اللہ"
+      "ur_name": "انعام اللہ"
     },
     {
       "id": 16,
-      "en_name": "Sanaullah",
+      "name": "Sanaullah",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "6",
+      "parent_id": "6",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "M",
-      "name": "ثنا۶اللہ"
+      "ur_name": "ثناءاللہ"
     },
     {
       "id": 17,
-      "en_name": "Samiullah",
+      "name": "Samiullah",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "6",
+      "parent_id": "6",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "M",
-      "name": "سمیع اللہ"
+      "ur_name": "سمیع اللہ"
     },
     {
       "id": 18,
-      "en_name": "Asadullah",
+      "name": "Asadullah",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "6",
+      "parent_id": "6",
       "is_external": false,
       "married": true,
       "died": true,
       "gender": "M",
-      "name": "اسد اللہ"
+      "ur_name": "اسد اللہ"
     },
     {
       "id": 19,
-      "en_name": "Abdullah",
+      "name": "Abdullah",
       "date_of_birth": "1997-01-14 00:00:00",
       "date_of_death": null,
-      "parentId": "10",
+      "parent_id": "10",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "M",
-      "name": "عبداللہ"
+      "ur_name": "عبداللہ"
     },
     {
       "id": 20,
-      "en_name": "Abdul Wahab",
+      "name": "Abdul Wahab",
       "date_of_birth": "1995-04-12 00:00:00",
       "date_of_death": null,
-      "parentId": "10",
+      "parent_id": "10",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "M",
-      "name": "عبدالوہاب"
+      "ur_name": "عبدالوہاب"
     },
     {
       "id": 21,
-      "en_name": "Abdul Jalil",
+      "name": "Abdul Jalil",
       "date_of_birth": "2002-10-07 00:00:00",
       "date_of_death": null,
-      "parentId": "10",
+      "parent_id": "10",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "M",
-      "name": "عبدالجلیل"
+      "ur_name": "عبدالجلیل"
     },
     {
       "id": 22,
-      "en_name": "Abdul Barr",
+      "name": "Abdul Barr",
       "date_of_birth": "2004-05-11 00:00:00",
       "date_of_death": null,
-      "parentId": "10",
+      "parent_id": "10",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "M",
-      "name": "عبدالبر"
+      "ur_name": "عبدالبر"
     },
     {
       "id": 23,
-      "en_name": "Zahra Batool",
+      "name": "Zahra Batool",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "10",
+      "parent_id": "10",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "F",
-      "name": "زہرہ بتول"
+      "ur_name": "زہرہ بتول"
     },
     {
       "id": 24,
-      "en_name": "Asma Batool",
+      "name": "Asma Batool",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "10",
+      "parent_id": "10",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "F",
-      "name": "اسما۶بتول"
+      "ur_name": "اسماءبتول"
     },
     {
       "id": 25,
-      "en_name": "Abdul Karim",
+      "name": "Abdul Karim",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "8",
+      "parent_id": "8",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "M",
-      "name": "عبدالکریم"
+      "ur_name": "عبدالکریم"
     },
     {
       "id": 26,
-      "en_name": "Abdul Manan",
+      "name": "Abdul Manan",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "8",
+      "parent_id": "8",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "M",
-      "name": "عبدالمنان"
+      "ur_name": "عبدالمنان"
     },
     {
       "id": 27,
-      "en_name": "Misbah Rehman",
+      "name": "Misbah Rehman",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "8",
+      "parent_id": "8",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "F",
-      "name": "مصباح رضوان"
+      "ur_name": "مصباح رضوان"
     },
     {
       "id": 28,
-      "en_name": "Atia Rehman",
+      "name": "Atia Rehman",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "8",
+      "parent_id": "8",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "F",
-      "name": "عطیہ رحمٰن"
+      "ur_name": "عطیہ رحمٰن"
     },
     {
       "id": 29,
-      "en_name": "Asia Rehman",
+      "name": "Asia Rehman",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "8",
+      "parent_id": "8",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "F",
-      "name": "آسیہ رحمٰن"
+      "ur_name": "آسیہ رحمٰن"
     },
     {
       "id": 30,
-      "en_name": "Aasma Rehman",
+      "name": "Aasma Rehman",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "8",
+      "parent_id": "8",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "F",
-      "name": "آصمہ رحمٰن"
+      "ur_name": "آصمہ رحمٰن"
     },
     {
       "id": 31,
-      "en_name": "Abdul Salam Rashid",
+      "name": "Abdul Salam Rashid",
       "date_of_birth": "1999-10-25 00:00:00",
       "date_of_death": null,
-      "parentId": "12",
+      "parent_id": "12",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "M",
-      "name": "عبدالسلام راشد"
+      "ur_name": "عبدالسلام راشد"
     },
     {
       "id": 32,
-      "en_name": "Abdul Basit Zubair",
+      "name": "Abdul Basit Zubair",
       "date_of_birth": "2002-08-13 00:00:00",
       "date_of_death": null,
-      "parentId": "12",
+      "parent_id": "12",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "M",
-      "name": "عبدالباسط زبیر"
+      "ur_name": "عبدالباسط زبیر"
     },
     {
       "id": 33,
-      "en_name": "Abdul Samad Kashif",
+      "name": "Abdul Samad Kashif",
       "date_of_birth": "1998-02-26 00:00:00",
       "date_of_death": null,
-      "parentId": "12",
+      "parent_id": "12",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "M",
-      "name": "عبدالصمدکاشف"
+      "ur_name": "عبدالصمدکاشف"
     },
     {
       "id": 34,
-      "en_name": "Abdul Moizz Usaid",
+      "name": "Abdul Moizz Usaid",
       "date_of_birth": "2006-08-13 00:00:00",
       "date_of_death": null,
-      "parentId": "12",
+      "parent_id": "12",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "M",
-      "name": "عبدالمعزاسید"
+      "ur_name": "عبدالمعزاسید"
     },
     {
       "id": 35,
-      "en_name": "Sarah Batool",
+      "name": "Sarah Batool",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "12",
+      "parent_id": "12",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "F",
-      "name": "سارہ بتول"
+      "ur_name": "سارہ بتول"
     },
     {
       "id": 36,
-      "en_name": "Warda Afaaf",
+      "name": "Warda Afaaf",
       "date_of_birth": "2023-10-17 00:00:00",
       "date_of_death": null,
-      "parentId": "20",
+      "parent_id": "20",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "F",
-      "name": "وردہ عفاف"
+      "ur_name": "وردہ عفاف"
     },
     {
       "id": 37,
-      "en_name": "Suleiman Mustafa",
+      "name": "Suleiman Mustafa",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "26",
+      "parent_id": "26",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "M",
-      "name": "سلیمان مصطفیٰ"
+      "ur_name": "سلیمان مصطفیٰ"
     },
     {
       "id": 38,
-      "en_name": "Abdul Wahid",
+      "name": "Abdul Wahid",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "15",
+      "parent_id": "15",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "M",
-      "name": "عبدالواحد"
+      "ur_name": "عبدالواحد"
     },
     {
       "id": 39,
-      "en_name": "Rabia",
+      "name": "Rabia",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "15",
+      "parent_id": "15",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "F",
-      "name": "رابعہ"
+      "ur_name": "رابعہ"
     },
     {
       "id": 40,
-      "en_name": "Hadia",
+      "name": "Hadia",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "15",
+      "parent_id": "15",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "F",
-      "name": "ہادیہ"
+      "ur_name": "ہادیہ"
     },
     {
       "id": 41,
-      "en_name": "Muhammad Bilal",
+      "name": "Muhammad Bilal",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "16",
+      "parent_id": "16",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "M",
-      "name": "محمدبلال"
+      "ur_name": "محمدبلال"
     },
     {
       "id": 42,
-      "en_name": "Muhammad Usman",
+      "name": "Muhammad Usman",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "16",
+      "parent_id": "16",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "M",
-      "name": "محمد عثمان"
+      "ur_name": "محمد عثمان"
     },
     {
       "id": 43,
-      "en_name": "Muhammad Suleiman",
+      "name": "Muhammad Suleiman",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "16",
+      "parent_id": "16",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "M",
-      "name": "محمد سلیمان"
+      "ur_name": "محمد سلیمان"
     },
     {
       "id": 44,
-      "en_name": "Maryam Noor",
+      "name": "Maryam Noor",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "16",
+      "parent_id": "16",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "F",
-      "name": "مریم نور"
+      "ur_name": "مریم نور"
     },
     {
       "id": 45,
-      "en_name": "Munawar Sultana",
+      "name": "Munawar Sultana",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "6",
+      "parent_id": "6",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "F",
-      "name": "منور سلطانہ"
+      "ur_name": "منور سلطانہ"
     },
     {
       "id": 46,
-      "en_name": "Syyeda  Noreen",
+      "name": "Syyeda  Noreen",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "6",
+      "parent_id": "6",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "F",
-      "name": "سیدہ نورین"
+      "ur_name": "سیدہ نورین"
     },
     {
       "id": 47,
-      "en_name": "Tayyiba Noreen",
+      "name": "Tayyiba Noreen",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "6",
+      "parent_id": "6",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "F",
-      "name": "طیبہ نورین"
+      "ur_name": "طیبہ نورین"
     },
     {
       "id": 48,
-      "en_name": "Naima Noreen",
+      "name": "Naima Noreen",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "6",
+      "parent_id": "6",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "F",
-      "name": "نعیمہ نورین"
+      "ur_name": "نعیمہ نورین"
     },
     {
       "id": 53,
-      "en_name": "Nadira",
+      "name": "Nadira",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "4",
+      "parent_id": "4",
       "is_external": false,
       "married": true,
       "died": true,
       "gender": "F",
-      "name": "نادرہ"
+      "ur_name": "نادرہ"
     },
     {
       "id": 54,
-      "en_name": "Jamila",
+      "name": "Jamila",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "4",
+      "parent_id": "4",
       "is_external": false,
       "married": true,
       "died": true,
       "gender": "F",
-      "name": "جمیلہ"
+      "ur_name": "جمیلہ"
     },
     {
       "id": 55,
-      "en_name": "Shagufta",
+      "name": "Shagufta",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "4",
+      "parent_id": "4",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "F",
-      "name": "شگفتہ"
+      "ur_name": "شگفتہ"
     },
     {
       "id": 56,
-      "en_name": "Najma tun Nisa",
+      "name": "Najma tun Nisa",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "4",
+      "parent_id": "4",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "F",
-      "name": "نجمۃنسا۶"
+      "ur_name": "نجمۃ النساء"
     },
     {
       "id": 57,
-      "en_name": "Abdur Rasheed",
+      "name": "Abdur Rasheed",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "2",
+      "parent_id": "2",
       "is_external": false,
       "married": true,
       "died": true,
       "gender": "M",
-      "name": "عبدالرشید"
+      "ur_name": "عبدالرشید"
     },
     {
       "id": 59,
-      "en_name": "Iftikhar ur Rasheed Ahmed",
+      "name": "Iftikhar ur Rasheed Ahmed",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "57",
+      "parent_id": "57",
       "is_external": false,
       "married": true,
       "died": true,
       "gender": "M",
-      "name": "افتخارالرشیداحمد"
+      "ur_name": "افتخارالرشیداحمد"
     },
     {
       "id": 60,
-      "en_name": "Mukhtar ur Rasheed Ahmed",
+      "name": "Mukhtar ur Rasheed Ahmed",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "57",
+      "parent_id": "57",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "M",
-      "name": "مختارالرشیداحمد"
+      "ur_name": "مختارالرشیداحمد"
     },
     {
       "id": 61,
-      "en_name": "Ijaz ur Rasheed Ahmed",
+      "name": "Ijaz ur Rasheed Ahmed",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "57",
+      "parent_id": "57",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "M",
-      "name": "اعجازالرشیداحمد"
+      "ur_name": "اعجازالرشیداحمد"
     },
     {
       "id": 62,
-      "en_name": "Mumtaz ur Rasheed Ahmed",
+      "name": "Mumtaz ur Rasheed Ahmed",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "57",
+      "parent_id": "57",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "M",
-      "name": "ممتازالرشیداحمد"
+      "ur_name": "ممتازالرشیداحمد"
     },
     {
       "id": 63,
-      "en_name": "Musarrat ur Rasheed",
+      "name": "Musarrat ur Rasheed",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "57",
+      "parent_id": "57",
       "is_external": false,
       "married": true,
       "died": true,
       "gender": "F",
-      "name": "مسرت الرشید"
+      "ur_name": "مسرت الرشید"
     },
     {
       "id": 64,
-      "en_name": "Nighat ur Rasheed",
+      "name": "Nighat ur Rasheed",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "57",
+      "parent_id": "57",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "F",
-      "name": "نگہت الرشید"
+      "ur_name": "نگہت الرشید"
     },
     {
       "id": 65,
-      "en_name": "Farhat ur Rasheed",
+      "name": "Farhat ur Rasheed",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "57",
+      "parent_id": "57",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "F",
-      "name": "فرحت الرشید"
+      "ur_name": "فرحت الرشید"
     },
     {
       "id": 66,
-      "en_name": "Hamid Iftikhar",
+      "name": "Hamid Iftikhar",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "59",
+      "parent_id": "59",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "M",
-      "name": "حامدافتخار"
+      "ur_name": "حامدافتخار"
     },
     {
       "id": 67,
-      "en_name": "Humaira Nosheen",
+      "name": "Humaira Nosheen",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "59",
+      "parent_id": "59",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "F",
-      "name": "حمیرہ نوشین"
+      "ur_name": "حمیرہ نوشین"
     },
     {
       "id": 68,
-      "en_name": "Muneera Semeen",
+      "name": "Muneera Semeen",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "59",
+      "parent_id": "59",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "F",
-      "name": "منیرہ سیمین"
+      "ur_name": "منیرہ سیمین"
     },
     {
       "id": 69,
-      "en_name": "Saneeah",
+      "name": "Saneeah",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "59",
+      "parent_id": "59",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "F",
-      "name": "سنیعیہ"
+      "ur_name": "سنیعیہ"
     },
     {
       "id": 70,
-      "en_name": "Sameeah",
+      "name": "Sameeah",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "59",
+      "parent_id": "59",
       "is_external": false,
       "married": true,
-      "died": true,
+      "died": false,
       "gender": "F",
-      "name": "سمیعیہ"
+      "ur_name": "سمیعیہ"
     },
     {
       "id": 71,
-      "en_name": "Sairah",
+      "name": "Sairah",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "59",
+      "parent_id": "59",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "F",
-      "name": "سائرہ"
+      "ur_name": "سائرہ"
     },
     {
       "id": 72,
-      "en_name": "Faiza Jabeen",
+      "name": "Faiza Jabeen",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "59",
+      "parent_id": "59",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "F",
-      "name": "فائزہ جبین"
+      "ur_name": "فائزہ جبین"
     },
     {
       "id": 94,
-      "en_name": "Muhammad Tahir",
+      "name": "Muhammad Tahir",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "60",
+      "parent_id": "60",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "M",
-      "name": "محمد طاہر"
+      "ur_name": "محمد طاہر"
     },
     {
       "id": 95,
-      "en_name": "Maryam Mukhtar",
+      "name": "Maryam Mukhtar",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "60",
+      "parent_id": "60",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "F",
-      "name": "مریم مختار"
+      "ur_name": "مریم مختار"
     },
     {
       "id": 96,
-      "en_name": "Amina Mukhtar",
+      "name": "Amina Mukhtar",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "60",
+      "parent_id": "60",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "F",
-      "name": "آمنہ مختار"
+      "ur_name": "آمنہ مختار"
     },
     {
       "id": 97,
-      "en_name": "Shakirah Mukhtar",
+      "name": "Shakirah Mukhtar",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "60",
+      "parent_id": "60",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "F",
-      "name": "شاکرہ مختار"
+      "ur_name": "شاکرہ مختار"
     },
     {
       "id": 100,
-      "en_name": "Tahirah Mukhtar",
+      "name": "Tahirah Mukhtar",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "60",
+      "parent_id": "60",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "F",
-      "name": "طاہرہ مختار"
+      "ur_name": "طاہرہ مختار"
     },
     {
       "id": 101,
-      "en_name": "Yasir",
+      "name": "Yasir",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "61",
+      "parent_id": "61",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "M",
-      "name": "یاسر"
+      "ur_name": "یاسر"
     },
     {
       "id": 102,
-      "en_name": "Sobia",
+      "name": "Sobia",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "61",
+      "parent_id": "61",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "F",
-      "name": "ثوبیہ"
+      "ur_name": "ثوبیہ"
     },
     {
       "id": 103,
-      "en_name": "Nabila",
+      "name": "Nabila",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "61",
+      "parent_id": "61",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "F",
-      "name": "نبیلہ"
+      "ur_name": "نبیلہ"
     },
     {
       "id": 104,
-      "en_name": "Muneeba",
+      "name": "Muneeba",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "61",
+      "parent_id": "61",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "F",
-      "name": "منیبہ"
+      "ur_name": "منیبہ"
     },
     {
       "id": 105,
-      "en_name": "Imtiaz ur Rasheed Ahmed",
+      "name": "Imtiaz ur Rasheed Ahmed",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "57",
+      "parent_id": "57",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "M",
-      "name": "امتیازالرشیداحمد"
+      "ur_name": "امتیازالرشیداحمد"
     },
     {
       "id": 106,
-      "en_name": "Qanita",
+      "name": "Qanita",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "105",
+      "parent_id": "105",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "F",
-      "name": "قانتہ"
+      "ur_name": "قانتہ"
     },
     {
       "id": 107,
-      "en_name": "Madeeha",
+      "name": "Madeeha",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "105",
+      "parent_id": "105",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "F",
-      "name": "مدیحہ"
+      "ur_name": "مدیحہ"
     },
     {
       "id": 108,
-      "en_name": "Ayan",
+      "name": "Ayan",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "62",
+      "parent_id": "62",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "M",
-      "name": "آیان"
+      "ur_name": "آیان"
     },
     {
       "id": 109,
-      "en_name": "Anabiyah Mumtaz",
+      "name": "Anabiyah Mumtaz",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "62",
+      "parent_id": "62",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "F",
-      "name": "انابیہ ممتاز"
+      "ur_name": "انابیہ ممتاز"
     },
     {
       "id": 110,
-      "en_name": "Huriyah Mumtaz",
+      "name": "Huriyah Mumtaz",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "62",
+      "parent_id": "62",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "F",
-      "name": "حوریہ ممتار"
+      "ur_name": "حوریہ ممتار"
     },
     {
       "id": 111,
-      "en_name": "Aizah Mumtaz",
+      "name": "Aizah Mumtaz",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "62",
+      "parent_id": "62",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "F",
-      "name": "عائزہ ممتاز"
+      "ur_name": "عائزہ ممتاز"
     },
     {
       "id": 112,
-      "en_name": "Anayah Mumtaz",
+      "name": "Anayah Mumtaz",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "62",
+      "parent_id": "62",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "F",
-      "name": "عنایہ ممتاز"
+      "ur_name": "عنایہ ممتاز"
     },
     {
       "id": 113,
-      "en_name": "Abdul Hameed",
+      "name": "Abdul Hameed",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "2",
+      "parent_id": "2",
       "is_external": false,
       "married": true,
       "died": true,
       "gender": "M",
-      "name": "عبدالحمید"
+      "ur_name": "عبدالحمید"
     },
     {
       "id": 114,
-      "en_name": "Muhammad Akram",
+      "name": "Muhammad Akram",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "113",
+      "parent_id": "113",
       "is_external": false,
       "married": true,
       "died": true,
       "gender": "M",
-      "name": "محمد اکرم"
+      "ur_name": "محمد اکرم"
     },
     {
       "id": 115,
-      "en_name": "Shehnaz Banu",
+      "name": "Shehnaz Banu",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "113",
+      "parent_id": "113",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "F",
-      "name": "شہنازبانو"
+      "ur_name": "شہنازبانو"
     },
     {
       "id": 116,
-      "en_name": "Muhammad Afzal",
+      "name": "Muhammad Afzal",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "114",
+      "parent_id": "114",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "M",
-      "name": "محمد افضل"
+      "ur_name": "محمد افضل"
     },
     {
       "id": 117,
-      "en_name": "Muhammad Ashraf Mughal",
+      "name": "Muhammad Ashraf Mughal",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "114",
+      "parent_id": "114",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "M",
-      "name": "محمد اشرف مغل"
+      "ur_name": "محمد اشرف مغل"
     },
     {
       "id": 118,
-      "en_name": "Muhammad Arshad",
+      "name": "Muhammad Arshad",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "114",
+      "parent_id": "114",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "M",
-      "name": "محمد ارشد"
+      "ur_name": "محمد ارشد"
     },
     {
       "id": 119,
-      "en_name": "Fakhirah",
+      "name": "Fakhirah",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "114",
+      "parent_id": "114",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "F",
-      "name": "فاخرہ"
+      "ur_name": "فاخرہ"
     },
     {
       "id": 120,
-      "en_name": "Muaaz",
+      "name": "Muaaz",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "116",
+      "parent_id": "116",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "M",
-      "name": "معاذ"
+      "ur_name": "معاذ"
     },
     {
       "id": 121,
-      "en_name": "Muhammad Mueid Subhani",
+      "name": "Muhammad Mueid Subhani",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "117",
+      "parent_id": "117",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "M",
-      "name": "محمدمعیدسبحانی"
+      "ur_name": "محمدمعیدسبحانی"
     },
     {
       "id": 122,
-      "en_name": "Adeena Fatima",
+      "name": "Adeena Fatima",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "117",
+      "parent_id": "117",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "F",
-      "name": "ادینہ فاطمہ"
+      "ur_name": "ادینہ فاطمہ"
     },
     {
       "id": 123,
-      "en_name": "Hamna",
+      "name": "Hamna",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "116",
+      "parent_id": "116",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "F",
-      "name": "حمنہ"
+      "ur_name": "حمنہ"
     },
     {
       "id": 124,
-      "en_name": "Areeba",
+      "name": "Areeba",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "118",
+      "parent_id": "118",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "F",
-      "name": "اریبہ"
+      "ur_name": "اریبہ"
     },
     {
       "id": 125,
-      "en_name": "Umaima",
+      "name": "Umaima",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "118",
+      "parent_id": "118",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "F",
-      "name": "امائمہ"
+      "ur_name": "امائمہ"
     },
     {
       "id": 126,
-      "en_name": "Abdul Latif",
+      "name": "Abdul Latif",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "2",
+      "parent_id": "2",
       "is_external": false,
       "married": true,
       "died": true,
       "gender": "M",
-      "name": "عبدالطیف"
+      "ur_name": "عبدالطیف"
     },
     {
       "id": 127,
-      "en_name": "Muhammad Ashraf",
+      "name": "Muhammad Ashraf",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "126",
+      "parent_id": "126",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "M",
-      "name": "محمد اشرف"
+      "ur_name": "محمد اشرف"
     },
     {
       "id": 128,
-      "en_name": "Muhammad Azam",
+      "name": "Muhammad Azam",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "126",
+      "parent_id": "126",
       "is_external": false,
       "married": true,
       "died": true,
       "gender": "M",
-      "name": "محمد اعظم"
+      "ur_name": "محمد اعظم"
     },
     {
       "id": 129,
-      "en_name": "Muhammad Arshad Shamim",
+      "name": "Muhammad Arshad Shamim",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "126",
+      "parent_id": "126",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "M",
-      "name": "محمد ارشد شمیم"
+      "ur_name": "محمد ارشد شمیم"
     },
     {
       "id": 130,
-      "en_name": "Muhammad Saleem ",
+      "name": "Muhammad Saleem ",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "126",
+      "parent_id": "126",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "M",
-      "name": "محمد سلیم"
+      "ur_name": "محمد سلیم"
     },
     {
       "id": 131,
-      "en_name": "Muhammad Afzal",
+      "name": "Muhammad Afzal",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "126",
+      "parent_id": "126",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "M",
-      "name": "محمدا افضل"
+      "ur_name": "محمدا افضل"
     },
     {
       "id": 132,
-      "en_name": "Muhammad Bashir",
+      "name": "Muhammad Bashir",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "126",
+      "parent_id": "126",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "M",
-      "name": "محمد بشیر"
+      "ur_name": "محمد بشیر"
     },
     {
       "id": 133,
-      "en_name": "Muhammad Umar",
+      "name": "Muhammad Umar",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "130",
+      "parent_id": "130",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "M",
-      "name": "محمد عمر"
+      "ur_name": "محمد عمر"
     },
     {
       "id": 134,
-      "en_name": "Muhammad Suhaib",
+      "name": "Muhammad Suhaib",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "130",
+      "parent_id": "130",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "M",
-      "name": "محمد صہیب"
+      "ur_name": "محمد صہیب"
     },
     {
       "id": 135,
-      "en_name": "Mah Noor",
+      "name": "Mah Noor",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "130",
+      "parent_id": "130",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "F",
-      "name": "ماہ نور فاطمہ"
+      "ur_name": "ماہ نور فاطمہ"
     },
     {
       "id": 136,
-      "en_name": "Muhammad Javed",
+      "name": "Muhammad Javed",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "129",
+      "parent_id": "129",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "M",
-      "name": "محمد جاوید"
+      "ur_name": "محمد جاوید"
     },
     {
       "id": 137,
-      "en_name": "Muhammad Junaid",
+      "name": "Muhammad Junaid",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "129",
+      "parent_id": "129",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "M",
-      "name": "محمد جنید"
+      "ur_name": "محمد جنید"
     },
     {
       "id": 138,
-      "en_name": "Sabihah",
+      "name": "Sabihah",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "129",
+      "parent_id": "129",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "F",
-      "name": "صبیحہ"
+      "ur_name": "صبیحہ"
     },
     {
       "id": 139,
-      "en_name": "Muhammad Inaam Ashraf",
+      "name": "Muhammad Inaam Ashraf",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "127",
+      "parent_id": "127",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "M",
-      "name": "محمد انعام اشرف"
+      "ur_name": "محمد انعام اشرف"
     },
     {
       "id": 140,
-      "en_name": "Samina Ashraf",
+      "name": "Samina Ashraf",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "127",
+      "parent_id": "127",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "F",
-      "name": "ثمینہ اشرف"
+      "ur_name": "ثمینہ اشرف"
     },
     {
       "id": 141,
-      "en_name": "Farzana Ashraf",
+      "name": "Farzana Ashraf",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "127",
+      "parent_id": "127",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "F",
-      "name": "فرزانہ اشرف"
+      "ur_name": "فرزانہ اشرف"
     },
     {
       "id": 142,
-      "en_name": "Rukhsana Ashraf",
+      "name": "Rukhsana Ashraf",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "127",
+      "parent_id": "127",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "F",
-      "name": "رخسانہ اشرف"
+      "ur_name": "رخسانہ اشرف"
     },
     {
       "id": 143,
-      "en_name": "Farhana Ashraf",
+      "name": "Farhana Ashraf",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "127",
+      "parent_id": "127",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "F",
-      "name": "فرحانہ اشرف"
+      "ur_name": "فرحانہ اشرف"
     },
     {
       "id": 144,
-      "en_name": "Muhammad Maaz Inaam",
+      "name": "Muhammad Maaz Inaam",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "139",
+      "parent_id": "139",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "M",
-      "name": "محمد معاذ انعام"
+      "ur_name": "محمد معاذ انعام"
     },
     {
       "id": 145,
-      "en_name": "Muhammad Mustafa Inaam",
+      "name": "Muhammad Mustafa Inaam",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "139",
+      "parent_id": "139",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "M",
-      "name": "محمد مصطفیٰ انعام"
+      "ur_name": "محمد مصطفیٰ انعام"
     },
     {
       "id": 146,
-      "en_name": "Muhammad Umair",
+      "name": "Muhammad Umair",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "131",
+      "parent_id": "131",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "M",
-      "name": "محمد عمیر"
+      "ur_name": "محمد عمیر"
     },
     {
       "id": 147,
-      "en_name": "Isha Afzal",
+      "name": "Isha Afzal",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "131",
+      "parent_id": "131",
       "is_external": false,
       "married": false,
       "died": false,
       "gender": "F",
-      "name": "ایشا اشرف"
+      "ur_name": "ایشا افضل"
     },
     {
       "id": 148,
-      "en_name": "Asim Azam",
+      "name": "Asim Azam",
       "date_of_birth": null,
       "date_of_death": null,
-      "parentId": "128",
+      "parent_id": "128",
       "is_external": false,
       "married": true,
       "died": false,
       "gender": "M",
-      "name": "عاصم اعظم"
+      "ur_name": "عاصم اعظم"
     }
    ]

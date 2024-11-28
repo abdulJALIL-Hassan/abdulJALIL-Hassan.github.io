@@ -1,0 +1,50 @@
+[
+    {
+        "id": 2,
+        "name": "Qaim Deen",
+        "date_of_birth": null,
+        "date_of_death": null,
+        "parent_id": null,
+        "is_external": false,
+        "married": true,
+        "died": true,
+        "gender": "M",
+        "ur_name": "قائم دین"
+    },
+    {
+        "id": 3,
+        "name": "Noor Ahmed",
+        "date_of_birth": null,
+        "date_of_death": null,
+        "parent_id": 2,
+        "is_external": false,
+        "married": true,
+        "died": true,
+        "gender": "M",
+        "ur_name": "نور احمد"
+    },
+    {
+        "id": 4,
+        "name": "Ibrahim",
+        "date_of_birth": null,
+        "date_of_death": null,
+        "parent_id": 2,
+        "is_external": false,
+        "married": true,
+        "died": true,
+        "gender": "M",
+        "ur_name": "ابراہیم"
+    },
+    {
+        "id": 5,
+        "name": "Rasheeda",
+        "date_of_birth": null,
+        "date_of_death": null,
+        "parent_id": 2,
+        "is_external": false,
+        "married": true,
+        "died": false,
+        "gender": "F",
+        "ur_name": "رشیدہ"
+    }
+]
