@@ -295,7 +295,7 @@
    "married": false,
    "died": false,
    "gender": "F",
-   "ur_name": "آصمہ رحمٰن",
+   "ur_name": "عاصمہ رحمٰن",
    "ancestor_id": null
  },
  {
@@ -581,7 +581,7 @@
    "married": true,
    "died": false,
    "gender": "F",
-   "ur_name": "نجمۃنساء",
+   "ur_name": "نجمۃانساء",
    "ancestor_id": null
  },
  {
@@ -950,7 +950,7 @@
  },
  {
    "id": 108,
-   "name": "Ayan",
+   "name": "Ayan ahmad",
    "date_of_birth": null,
    "date_of_death": null,
    "parent_id": "62",
@@ -958,7 +958,7 @@
    "married": false,
    "died": false,
    "gender": "M",
-   "ur_name": "آیان",
+   "ur_name": "آیان احمد",
    "ancestor_id": null
  },
  {
